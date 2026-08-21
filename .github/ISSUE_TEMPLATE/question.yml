@@ -1,0 +1,20 @@
+name: Technical question
+description: Ask a non-sensitive question about node or transit availability.
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not post IP addresses, credentials, tokens, private topology, or customer data."
+  - type: textarea
+    id: symptom
+    attributes:
+      label: Symptom
+      description: Describe the observable behavior without sensitive infrastructure details.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks already performed
+    validations:
+      required: true
